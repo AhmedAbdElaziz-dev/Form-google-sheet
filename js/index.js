@@ -11,12 +11,12 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const row = JSON.stringify({
     FirstName: firstName.value,
-    LastName: firstName.value,
-    Email: firstName.value,
-    PhoneNo: firstName.value,
-    Position: firstName.value,
-    Company: firstName.value,
-    UserName: firstName.value,
+    LastName: lastName.value,
+    Email: email.value,
+    PhoneNo: phoneNumber.value,
+    Position: company.value,
+    Company: position.value,
+    UserName: userName.value,
   });
 
   fetch("https://sheet.best/api/sheets/faa604bd-a8ba-45d9-8227-6257663d9b1a", {
